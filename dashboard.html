@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+  <a href="index.html" class="logo">Wanderly</a>
+
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="create-blog.html">Create Blog</a>
+    <a href="login.html">Login</a>
+    <a href="register.html" class="btn-link">Register</a>
+  </div>
+</nav>
+  </header>
+
+  <main class="container">
+    <section class="dash-top">
+      <div>
+        <h1 id="greeting">Welcome!</h1>
+        <p class="auth-sub">Manage your travel stories here.</p>
+      </div>
+      <a href="create-blog.html" class="btn-link">+ New Story</a>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="stat-number" id="post-count">0</span>
+        <span class="stat-label">Total Stories</span>
+      </div>
+    </section>
+
+    <h2 class="dash-heading">Your Stories</h2>
+
+    <div class="post-grid" id="dash-posts">
+      <!-- JavaScript fills this in during Step 2 -->
+    </div>
+
+    <p class="empty-msg" id="empty-msg" hidden>
+      You haven't written any stories yet. <a href="create-blog.html">Create your first one</a>.
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Wanderly. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

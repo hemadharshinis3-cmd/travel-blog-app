@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="container">
+  <a href="index.html" class="logo">Wanderly</a>
+
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="create-blog.html">Create Blog</a>
+    <a href="login.html">Login</a>
+    <a href="register.html" class="btn-link">Register</a>
+  </div>
+</nav>
+  </header>
+
+ <main class="container">
+  <section class="auth-box">
+    <center>
+    <h1>Welcome Back</h1>
+    <p class="auth-sub">Log in to continue your journey.</p>
+    </center>
+
+    <form id="login-form" novalidate>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <small class="error" id="email-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <small class="error" id="password-error"></small>
+      </div>
+
+      <p id="form-message" class="form-message"></p>
+             <button type="submit" class="full-btn">Login</button>
+    </form>
+
+    <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Wanderly. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

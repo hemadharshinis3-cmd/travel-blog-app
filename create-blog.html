@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly | Create Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+ <nav class="container">
+  <a href="index.html" class="logo">Wanderly</a>
+
+  <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="create-blog.html">Create Blog</a>
+    <a href="login.html">Login</a>
+    <a href="register.html" class="btn-link">Register</a>
+  </div>
+</nav>
+  </header>
+
+  <main class="container">
+    <section class="auth-box wide-box">
+      <h1>Create a New Story</h1>
+      <p class="auth-sub">Share your latest travel adventure.</p>
+
+      <form id="create-blog-form" novalidate>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" placeholder="e.g. A Weekend in the Mountains" required>
+          <small class="error" id="title-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="Beaches">Beaches</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Culture">Culture</option>
+            <option value="Nature">Nature</option>
+            <option value="Budget Travel">Budget Travel</option>
+          </select>
+          <small class="error" id="category-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL (optional)</label>
+          <input type="url" id="image" name="image" placeholder="https://example.com/photo.jpg">
+          <small class="error" id="image-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Story</label>
+          <textarea id="content" name="content" rows="8" placeholder="Write your story here..." required></textarea>
+          <small class="error" id="content-error"></small>
+        </div>
+
+        <p id="form-message" class="form-message"></p>
+        <button type="submit" class="full-btn">Publish Story</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Wanderly. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
